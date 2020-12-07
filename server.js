@@ -35,7 +35,7 @@ app.post('/', (req, res) => {
         else {
             let weatherText = `
             It's ${main.temp} degrees in ${name}!
-            Maximum for today is ${main.temp_max} but it can go as low as ${main.temp_min}!
+            Maximum temperature for today is ${main.temp_max} but it can go as low as ${main.temp_min}!
             Humidity is ${main.humidity}
              `;
             res.render('index', {weather: weatherText, error: null})
